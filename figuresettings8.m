@@ -59,27 +59,3 @@ function figuresettings8(filename, dpi, width, height)
     print(gcf, [filename, '.tiff'], '-dtiff', ['-r', num2str(dpi)]);
 
 end
-% print('figure','-dpdf','-r2400');  
-% 
-% date = datetime('now','Format','yyyy-mm-dd');
-
-
- % idx = 1;
- %    while true
- %        filename = sprintf('%s_%s_%d', customname, date, idx);
- %        if ~isfile([filename '.pdf']) 
- %            break;
- %        end
- %        idx = idx + 1; 
- %    end
- % 
- %    % Save the figure as a PDF
- %    print(filename, '-dpdf', '-r2400');  
-
-
-% if ispc % Use Windows ghostscript call
-%   system('gswin64c -o -q -sDEVICE=png256 -dEPSCrop -r2400 -oimprovedExample_eps.png improvedExample.eps');
-% else % Use Unix/OSX ghostscript call
-%   system('gs -o -q -sDEVICE=png256 -dEPSCrop -r2400 -oimprovedExample_eps.png improvedExample.eps');
-% end
-% end
